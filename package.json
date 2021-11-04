@@ -7,7 +7,8 @@
   "scripts": {
     "test": "jest --",
     "test:watch": "jest --watch --",
-    "test:watch-all": "jest --watchAll"
+    "test:watch-all": "jest --watchAll",
+    "lint": "eslint --fix 'src/**/*.{ts,tsx}'"
   },
   "dependencies": {
     "@types/node": "^14.14.31",
@@ -17,8 +18,10 @@
     "tslib": "^2.1.0"
   },
   "devDependencies": {
-    "@types/jest": "^26.0.20",
+    "@cazoo/eslint-plugin-eslint": "^1.0.2",
     "@types/deep-equal": "^1.0.1",
+    "@types/jest": "^26.0.20",
+    "eslint": "^7.32.0",
     "jest": "^26.6.3",
     "jest-mock-extended": "^1.0.13",
     "ts-jest": "^26.5.2"
